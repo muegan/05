@@ -4,17 +4,16 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	int number;
+	int n,m;
 	
 	printf("정수 하나를 입력하시오: ");
-	scanf("%d",&number);
+	scanf("%d",&n);
+	m=-n;
 	
-	if (number>0)
-		printf("양수입니다.\n");
-	else if (number<0)
-		printf("음수입니다.\n");
+	if (n>0)
+		printf("절대값은 %d입니다.\n",n);
 	else
-		printf("0입니다.\n");
+		printf("절대값은 %d입니다.\n",m);
 		 
 	return 0;
 }
